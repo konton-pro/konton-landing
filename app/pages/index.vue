@@ -72,13 +72,19 @@
             <div><strong>02</strong><span>Segurança como ponto de partida.</span></div>
             <div><strong>03</strong><span>Utilidade que se prova no cotidiano.</span></div>
           </div>
+          <figure class="about-visual">
+            <img
+              src="/images/social/konton-cidade-conectada.png"
+              alt="Ilustração de uma pessoa usando tecnologia para conectar caminhos no território"
+            />
+          </figure>
         </div>
       </section>
 
       <section id="produtos" class="products-section container">
         <div class="section-heading">
           <p class="section-number">02 <span>/</span> produtos</p>
-          <p class="section-caption">Duas frentes, a mesma vontade de tornar as coisas melhores.</p>
+          <p class="section-caption">Dois produtos em funcionamento e novas possibilidades em exploração.</p>
         </div>
 
         <div class="product-grid">
@@ -91,6 +97,11 @@
               <p>Menos espera, mais previsibilidade. A maneira simples de encontrar linhas e planejar seu caminho.</p>
             </div>
             <span class="product-link">Visitar nave <span aria-hidden="true">→</span></span>
+            <img
+              class="product-art"
+              src="/images/social/konton-mobilidade-conectada.png"
+              alt="Ilustração de um ônibus elétrico conectando caminhos na cidade"
+            />
           </a>
 
           <a class="product-card product-lockroom" href="https://lockroom.konton.pro" target="_blank" rel="noreferrer">
@@ -102,13 +113,36 @@
               <p>Um lugar seguro para suas credenciais. Privacidade de ponta a ponta, sem abrir mão da praticidade.</p>
             </div>
             <span class="product-link">Visitar lock-room <span aria-hidden="true">→</span></span>
+            <img
+              class="product-art"
+              src="/images/social/konton-privacidade-pessoal.png"
+              alt="Ilustração de uma pessoa protegendo suas informações pessoais"
+            />
           </a>
         </div>
       </section>
 
+      <section class="exploration-section container">
+        <div class="exploration-copy">
+          <p class="section-number">03 <span>/</span> em exploração</p>
+          <p class="product-kicker">O que vem depois</p>
+          <h2>Ideias em teste, com os pés no <em>cotidiano.</em></h2>
+          <p>
+            Nem toda boa hipótese já é um produto. A Konton abre espaço para investigar problemas,
+            conversar com pessoas e prototipar caminhos antes de fazer promessas.
+          </p>
+        </div>
+        <figure class="exploration-cover">
+          <img
+            src="/images/social/konton-projetos-em-exploracao.png"
+            alt="Pessoas colaborando na exploração de novas ideias e produtos"
+          />
+        </figure>
+      </section>
+
       <section id="eventos" class="events-section container">
         <div class="section-heading">
-          <p class="section-number">03 <span>/</span> eventos</p>
+          <p class="section-number">04 <span>/</span> eventos</p>
           <p class="section-caption">Conversas para pensar o presente e desenhar melhores caminhos.</p>
         </div>
 
@@ -135,7 +169,7 @@
 
       <section class="next-event-section container">
         <div class="next-event-copy">
-          <p class="section-number">04 <span>/</span> próximos encontros</p>
+          <p class="section-number">05 <span>/</span> próximos encontros</p>
           <p class="product-kicker">Em construção contínua</p>
           <h2>O próximo encontro começa agora.</h2>
           <p>
@@ -145,8 +179,8 @@
         </div>
         <figure class="next-event-cover">
           <img
-            src="/images/evento-nave-alagoas.png"
-            alt="Ilustração gráfica de mobilidade em Alagoas, com ônibus, litoral e elementos do filé"
+            src="/images/social/konton-comunidade-criadora.png"
+            alt="Pessoas colaborando em torno de uma mesa, junto à cidade e ao litoral"
           />
         </figure>
       </section>
@@ -154,7 +188,7 @@
       <section id="contato" class="contact-section container">
         <div class="contact-mark" aria-hidden="true">✳</div>
         <div>
-          <p class="section-number">05 <span>/</span> contato</p>
+          <p class="section-number">06 <span>/</span> contato</p>
           <h2>Tem uma ideia<br />para colocar <em>no mundo?</em></h2>
         </div>
         <a class="button button-dark" href="mailto:hello@konton.pro">Vamos conversar <span aria-hidden="true">↗</span></a>
