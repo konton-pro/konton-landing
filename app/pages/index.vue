@@ -127,36 +127,26 @@
                   Ver no Discord <span aria-hidden="true">↗</span>
                 </a>
               </div>
+              <img :src="event.image" :alt="event.imageAlt" class="event-card-cover" />
             </article>
           </div>
-
-          <figure class="event-cover">
-            <img
-              src="/images/evento-nave-alagoas.png"
-              alt="Ilustração gráfica de mobilidade em Alagoas, com ônibus, litoral e elementos do filé"
-            />
-          </figure>
         </div>
       </section>
 
       <section class="next-event-section container">
         <div class="next-event-copy">
-          <p class="section-number">04 <span>/</span> próximo evento</p>
-          <p class="product-kicker">Evento Nave</p>
-          <h2>{{ events[0].title }}</h2>
-          <p>{{ events[0].description }}</p>
-          <div class="next-event-meta">
-            <span>{{ events[0].date }}</span>
-            <span>{{ events[0].time }} · online</span>
-          </div>
-          <a :href="events[0].discordUrl" class="button button-dark" target="_blank" rel="noreferrer">
-            Ver no Discord <span aria-hidden="true">↗</span>
-          </a>
+          <p class="section-number">04 <span>/</span> próximos encontros</p>
+          <p class="product-kicker">Em construção contínua</p>
+          <h2>O próximo encontro começa agora.</h2>
+          <p>
+            A Konton está sempre elaborando novas conversas para aproximar pessoas, ideias e os desafios
+            reais do nosso território.
+          </p>
         </div>
         <figure class="next-event-cover">
           <img
-            src="/images/proximo-evento-nave-alagoas.png"
-            alt="Ilustração gráfica de uma van percorrendo a costa de Alagoas"
+            src="/images/evento-nave-alagoas.png"
+            alt="Ilustração gráfica de mobilidade em Alagoas, com ônibus, litoral e elementos do filé"
           />
         </figure>
       </section>
@@ -191,6 +181,8 @@ const events = [
     time: "12h",
     description: "O Projeto Nave não é apenas um aplicativo; é a modernização definitiva de um setor historicamente esquecido.",
     discordUrl: "https://discord.com/events/1547667617806946327/1547959674090029076",
+    image: "/images/evento-embarque-revolucao-alagoas.png",
+    imageAlt: "Ilustração gráfica de um ônibus, rota e elementos do filé em Alagoas",
   },
   {
     id: "1547959147125932202",
@@ -199,6 +191,8 @@ const events = [
     time: "12h",
     description: "O fim das longas esperas e o início da verdadeira eficiência.",
     discordUrl: "https://discord.com/events/1547667617806946327/1547959147125932202",
+    image: "/images/evento-evolucao-transporte-alagoas.png",
+    imageAlt: "Ilustração gráfica de uma van seguindo pela costa de Alagoas",
   },
 ];
 
