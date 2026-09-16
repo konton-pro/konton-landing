@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     head: {
       htmlAttrs: { lang: "pt-BR" },
       meta: [
-        { name: "theme-color", content: "#f7f5ef" },
+        { name: "theme-color", content: "#171513" },
         { name: "color-scheme", content: "light" },
       ],
       link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
