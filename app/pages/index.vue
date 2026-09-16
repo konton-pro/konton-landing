@@ -23,6 +23,7 @@
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="#sobre">Sobre</a>
         <a href="#produtos">Produtos</a>
+        <a href="#eventos">Eventos</a>
         <a href="#contato">Contato</a>
       </nav>
 
@@ -105,10 +106,57 @@
         </div>
       </section>
 
+      <section id="eventos" class="events-section container">
+        <div class="section-heading">
+          <p class="section-number">03 <span>/</span> eventos</p>
+          <p class="section-caption">Conversas para pensar o presente e desenhar melhores caminhos.</p>
+        </div>
+
+        <div class="events-layout">
+          <div class="event-list">
+            <article v-for="event in events" :key="event.id" class="event-card">
+              <div>
+                <p class="event-date">{{ event.date }}</p>
+                <p class="event-time">{{ event.time }} · online</p>
+              </div>
+              <div class="event-copy">
+                <p class="product-kicker">Evento Nave</p>
+                <h3>{{ event.title }}</h3>
+                <p>{{ event.description }}</p>
+                <a :href="event.discordUrl" class="text-link" target="_blank" rel="noreferrer">
+                  Ver no Discord <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <form class="registration-form" @submit.prevent="registerInterest">
+            <p class="product-kicker">Inscrição</p>
+            <h2>Quer participar?</h2>
+            <p>Deixe seus dados e a gente envia os próximos passos.</p>
+            <label>
+              Evento
+              <select v-model="registration.event" required>
+                <option v-for="event in events" :key="event.id" :value="event.title">{{ event.title }}</option>
+              </select>
+            </label>
+            <label>
+              Nome
+              <input v-model.trim="registration.name" type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              E-mail
+              <input v-model.trim="registration.email" type="email" name="email" autocomplete="email" required />
+            </label>
+            <button class="button button-primary" type="submit">Quero me inscrever <span aria-hidden="true">↗</span></button>
+          </form>
+        </div>
+      </section>
+
       <section id="contato" class="contact-section container">
         <div class="contact-mark" aria-hidden="true">✳</div>
         <div>
-          <p class="section-number">03 <span>/</span> contato</p>
+          <p class="section-number">04 <span>/</span> contato</p>
           <h2>Tem uma ideia<br />para colocar <em>no mundo?</em></h2>
         </div>
         <a class="button button-dark" href="mailto:hello@konton.pro">Vamos conversar <span aria-hidden="true">↗</span></a>
@@ -127,6 +175,33 @@
 </template>
 
 <script setup lang="ts">
+const events = [
+  {
+    id: "1547959674090029076",
+    title: "Embarque na Revolução",
+    date: "09 out. 2026",
+    time: "12h",
+    description: "O Projeto Nave não é apenas um aplicativo; é a modernização definitiva de um setor historicamente esquecido.",
+    discordUrl: "https://discord.com/events/1547667617806946327/1547959674090029076",
+  },
+  {
+    id: "1547959147125932202",
+    title: "A evolução no transporte digital",
+    date: "13 nov. 2026",
+    time: "12h",
+    description: "O fim das longas esperas e o início da verdadeira eficiência.",
+    discordUrl: "https://discord.com/events/1547667617806946327/1547959147125932202",
+  },
+];
+
+const registration = ref({ event: events[0].title, name: "", email: "" });
+
+const registerInterest = () => {
+  const subject = encodeURIComponent(`Inscrição — ${registration.value.event}`);
+  const body = encodeURIComponent(`Evento: ${registration.value.event}\nNome: ${registration.value.name}\nE-mail: ${registration.value.email}`);
+  window.location.href = `mailto:hello@konton.pro?subject=${subject}&body=${body}`;
+};
+
 useHead({
   link: [{ rel: "canonical", href: "https://konton.pro" }],
 });
