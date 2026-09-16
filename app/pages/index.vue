@@ -57,8 +57,11 @@
       </section>
 
       <section class="exploration-section container">
-        <div class="exploration-copy"><p class="section-number">04 <span>/</span> em exploração</p><p class="product-kicker">O que vem depois</p><h2>Ideias em teste, com os pés no <em>cotidiano.</em></h2><p>Nem toda boa hipótese já é um produto. A Konton abre espaço para investigar problemas, conversar com pessoas e prototipar caminhos antes de fazer promessas.</p></div>
-        <div class="exploration-mark" aria-label="Dois caminhos se aproximando de um ponto de direção" role="img"><span class="exploration-label">em movimento</span><span class="exploration-dot dot-one"></span><span class="exploration-dot dot-two"></span><span class="exploration-path path-one"></span><span class="exploration-path path-two"></span></div>
+        <div class="section-heading"><p class="section-number">04 <span>/</span> em exploração</p><p class="section-caption">Hipóteses que ainda estão procurando a melhor forma de ganhar o mundo.</p></div>
+        <div class="exploration-grid">
+          <div class="exploration-copy"><p class="product-kicker">O que vem depois</p><h2>Ideias em teste, com os pés no <em>cotidiano.</em></h2><p>Nem toda boa hipótese já é um produto. A Konton abre espaço para investigar problemas, conversar com pessoas e prototipar caminhos antes de fazer promessas.</p></div>
+          <div class="exploration-mark" aria-label="Dois caminhos se aproximando de um ponto de direção" role="img"><span class="exploration-label">em movimento</span><span class="exploration-dot dot-one"></span><span class="exploration-dot dot-two"></span><span class="exploration-path path-one"></span><span class="exploration-path path-two"></span></div>
+        </div>
       </section>
 
       <section id="eventos" class="events-section container">
