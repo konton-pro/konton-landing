@@ -130,33 +130,41 @@
             </article>
           </div>
 
-          <form class="registration-form" @submit.prevent="registerInterest">
-            <p class="product-kicker">Inscrição</p>
-            <h2>Quer participar?</h2>
-            <p>Deixe seus dados e a gente envia os próximos passos.</p>
-            <label>
-              Evento
-              <select v-model="registration.event" required>
-                <option v-for="event in events" :key="event.id" :value="event.title">{{ event.title }}</option>
-              </select>
-            </label>
-            <label>
-              Nome
-              <input v-model.trim="registration.name" type="text" name="name" autocomplete="name" required />
-            </label>
-            <label>
-              E-mail
-              <input v-model.trim="registration.email" type="email" name="email" autocomplete="email" required />
-            </label>
-            <button class="button button-primary" type="submit">Quero me inscrever <span aria-hidden="true">↗</span></button>
-          </form>
+          <figure class="event-cover">
+            <img
+              src="/images/evento-nave-alagoas.png"
+              alt="Ilustração gráfica de mobilidade em Alagoas, com ônibus, litoral e elementos do filé"
+            />
+          </figure>
         </div>
+      </section>
+
+      <section class="next-event-section container">
+        <div class="next-event-copy">
+          <p class="section-number">04 <span>/</span> próximo evento</p>
+          <p class="product-kicker">Evento Nave</p>
+          <h2>{{ events[0].title }}</h2>
+          <p>{{ events[0].description }}</p>
+          <div class="next-event-meta">
+            <span>{{ events[0].date }}</span>
+            <span>{{ events[0].time }} · online</span>
+          </div>
+          <a :href="events[0].discordUrl" class="button button-dark" target="_blank" rel="noreferrer">
+            Ver no Discord <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <figure class="next-event-cover">
+          <img
+            src="/images/proximo-evento-nave-alagoas.png"
+            alt="Ilustração gráfica de uma van percorrendo a costa de Alagoas"
+          />
+        </figure>
       </section>
 
       <section id="contato" class="contact-section container">
         <div class="contact-mark" aria-hidden="true">✳</div>
         <div>
-          <p class="section-number">04 <span>/</span> contato</p>
+          <p class="section-number">05 <span>/</span> contato</p>
           <h2>Tem uma ideia<br />para colocar <em>no mundo?</em></h2>
         </div>
         <a class="button button-dark" href="mailto:hello@konton.pro">Vamos conversar <span aria-hidden="true">↗</span></a>
@@ -193,14 +201,6 @@ const events = [
     discordUrl: "https://discord.com/events/1547667617806946327/1547959147125932202",
   },
 ];
-
-const registration = ref({ event: events[0].title, name: "", email: "" });
-
-const registerInterest = () => {
-  const subject = encodeURIComponent(`Inscrição — ${registration.value.event}`);
-  const body = encodeURIComponent(`Evento: ${registration.value.event}\nNome: ${registration.value.name}\nE-mail: ${registration.value.email}`);
-  window.location.href = `mailto:hello@konton.pro?subject=${subject}&body=${body}`;
-};
 
 useHead({
   link: [{ rel: "canonical", href: "https://konton.pro" }],
