@@ -45,17 +45,12 @@
           </div>
         </div>
 
-        <div class="hero-art" aria-label="Ilustração abstrata representando conexões" role="img">
-          <div class="art-orbit orbit-one"></div>
-          <div class="art-orbit orbit-two"></div>
-          <div class="art-core"><span>k</span></div>
-          <span class="art-node node-one"></span>
-          <span class="art-node node-two"></span>
-          <span class="art-node node-three"></span>
-          <span class="art-label label-one">curiosidade</span>
-          <span class="art-label label-two">cuidado</span>
-          <span class="art-label label-three">movimento</span>
-        </div>
+        <figure class="hero-art">
+          <img
+            src="/images/brand-ink/konton-dois-desenvolvedores.png"
+            alt="Duas pessoas desenvolvendo produtos digitais e seguindo caminhos que se encontram"
+          />
+        </figure>
       </section>
 
       <section id="sobre" class="about-section container section-grid">
@@ -72,12 +67,6 @@
             <div><strong>02</strong><span>Segurança como ponto de partida.</span></div>
             <div><strong>03</strong><span>Utilidade que se prova no cotidiano.</span></div>
           </div>
-          <figure class="about-visual">
-            <img
-              src="/images/social/konton-cidade-conectada.png"
-              alt="Ilustração de uma pessoa usando tecnologia para conectar caminhos no território"
-            />
-          </figure>
         </div>
       </section>
 
@@ -99,8 +88,8 @@
             <span class="product-link">Visitar nave <span aria-hidden="true">→</span></span>
             <img
               class="product-art"
-              src="/images/social/konton-mobilidade-conectada.png"
-              alt="Ilustração de um ônibus elétrico conectando caminhos na cidade"
+              src="/images/brand-ink/konton-nave-jornada.png"
+              alt="Pessoa e veículo seguindo uma jornada clara até o destino"
             />
           </a>
 
@@ -115,8 +104,8 @@
             <span class="product-link">Visitar lock-room <span aria-hidden="true">→</span></span>
             <img
               class="product-art"
-              src="/images/social/konton-privacidade-pessoal.png"
-              alt="Ilustração de uma pessoa protegendo suas informações pessoais"
+              src="/images/brand-ink/konton-lock-room-privacidade.png"
+              alt="Pessoa guardando uma informação pessoal em um espaço protegido"
             />
           </a>
         </div>
@@ -132,12 +121,7 @@
             conversar com pessoas e prototipar caminhos antes de fazer promessas.
           </p>
         </div>
-        <figure class="exploration-cover">
-          <img
-            src="/images/social/konton-projetos-em-exploracao.png"
-            alt="Pessoas colaborando na exploração de novas ideias e produtos"
-          />
-        </figure>
+        <div class="exploration-mark" aria-hidden="true"><span></span><span></span><span></span></div>
       </section>
 
       <section id="eventos" class="events-section container">
@@ -179,8 +163,8 @@
         </div>
         <figure class="next-event-cover">
           <img
-            src="/images/social/konton-comunidade-criadora.png"
-            alt="Pessoas colaborando em torno de uma mesa, junto à cidade e ao litoral"
+            src="/images/brand-ink/konton-dois-desenvolvedores.png"
+            alt="Duas pessoas desenvolvendo produtos digitais e seguindo caminhos que se encontram"
           />
         </figure>
       </section>
