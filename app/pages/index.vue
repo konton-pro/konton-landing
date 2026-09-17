@@ -1,13 +1,5 @@
 <template>
   <div class="site-shell">
-    <Head>
-      <Title>Konton PRO — tecnologia que ganha caminho</Title>
-      <Meta name="description" content="A Konton PRO transforma problemas reais em produtos digitais simples, seguros e úteis." />
-      <Meta property="og:title" content="Konton PRO — tecnologia que ganha caminho" />
-      <Meta property="og:description" content="Uma software house que observa, constrói e evolui produtos digitais com intenção." />
-      <Meta property="og:type" content="website" />
-    </Head>
-
     <header class="site-header container">
       <a class="wordmark" href="#top" aria-label="Konton PRO, início"><img src="/logo-mark.svg" alt="" aria-hidden="true" /><span>konton<span class="wordmark-dot">.</span><small>pro</small></span></a>
       <nav class="main-nav" aria-label="Navegação principal"><a href="#sobre">Sobre</a><a href="#metodo">Como fazemos</a><a href="#produtos">Produtos</a><a href="#eventos">Eventos</a></nav>
@@ -82,9 +74,52 @@
 </template>
 
 <script setup lang="ts">
+const title = "Konton PRO — tecnologia que ganha caminho";
+const description = "A Konton PRO transforma problemas reais em produtos digitais simples, seguros e úteis.";
+const socialDescription = "Uma software house que observa, constrói e evolui produtos digitais com intenção.";
+const { public: { siteUrl } } = useRuntimeConfig();
+
+if (import.meta.server) {
+  useSeoMeta({
+    title,
+    description,
+    robots: "index, follow",
+    ogTitle: title,
+    ogDescription: socialDescription,
+    ogType: "website",
+    ogSiteName: "Konton PRO",
+    ogLocale: "pt_BR",
+    twitterCard: "summary_large_image",
+    twitterTitle: title,
+    twitterDescription: socialDescription,
+  });
+
+  useHead({
+    link: [{ rel: "canonical", href: new URL("/", siteUrl).href }],
+  });
+
+  useSchemaOrg([
+    defineOrganization({
+      name: "Konton PRO",
+      url: siteUrl,
+      email: "hello@konton.pro",
+      description,
+      logo: new URL("/logo-mark.svg", siteUrl).href,
+    }),
+  ]);
+
+  defineOgImage("Konton", {
+    title: "Ideias que ganham caminho.",
+    description: socialDescription,
+  }, {
+    width: 1200,
+    height: 630,
+    alt: "Konton PRO — Ideias que ganham caminho.",
+  });
+}
+
 const events = [
   { id: "1547959674090029076", index: "01", title: "Embarque na Revolução", date: "09 out. 2026", time: "12h", description: "O Projeto Nave não é apenas um aplicativo; é a modernização definitiva de um setor historicamente esquecido.", discordUrl: "https://discord.com/events/1547667617806946327/1547959674090029076" },
   { id: "1547959147125932202", index: "02", title: "A evolução no transporte digital", date: "13 nov. 2026", time: "12h", description: "O fim das longas esperas e o início da verdadeira eficiência.", discordUrl: "https://discord.com/events/1547667617806946327/1547959147125932202" },
 ];
-useHead({ link: [{ rel: "canonical", href: "https://konton.pro" }] });
 </script>
