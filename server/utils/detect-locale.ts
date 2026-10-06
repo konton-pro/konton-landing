@@ -41,3 +41,10 @@ export function shouldRedirectToEn({ method, path, cookie, userAgent, acceptLang
   if (isBot(userAgent)) return false;
   return resolveLocale(acceptLanguage) === "en";
 }
+
+export const LOCALE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
+
+/** Set-Cookie value that records the visitor's locale choice for one year. */
+export function localeCookieHeader(locale: string) {
+  return `${LOCALE_COOKIE}=${encodeURIComponent(locale)}; Path=/; Max-Age=${LOCALE_COOKIE_MAX_AGE}; SameSite=Lax`;
+}

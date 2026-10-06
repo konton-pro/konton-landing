@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { isBot, resolveLocale, shouldRedirectToEn } from "../server/utils/detect-locale.ts";
+import { isBot, localeCookieHeader, resolveLocale, shouldRedirectToEn } from "../server/utils/detect-locale.ts";
 
 const base = { method: "GET", path: "/", acceptLanguage: "en-US,en;q=0.9" };
 
@@ -29,4 +29,8 @@ test("shouldRedirectToEn", () => {
   assert.ok(!shouldRedirectToEn({ ...base, cookie: "a=1; i18n_redirected=pt-BR" }));
   assert.ok(!shouldRedirectToEn({ ...base, userAgent: "Googlebot/2.1" }));
   assert.ok(!shouldRedirectToEn({ ...base, acceptLanguage: undefined }));
+});
+
+test("localeCookieHeader", () => {
+  assert.equal(localeCookieHeader("en"), "i18n_redirected=en; Path=/; Max-Age=31536000; SameSite=Lax");
 });
