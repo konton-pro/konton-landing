@@ -81,7 +81,7 @@
     "number": "05 {slash} gatherings",
     "caption": "Conversations to understand the present and shape better paths.",
     "kicker": "Nave event",
-    "date": "{day} {month} {year}",
+    "date": "{month} {day}, {year}",
     "time": "{time} · online",
     "discord": "View on Discord",
     "items": {
