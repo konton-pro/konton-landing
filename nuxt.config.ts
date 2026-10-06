@@ -17,7 +17,9 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ["/", "/en"],
+      // "/" is SSR'd (not prerendered): Nitro serves public assets before server middleware,
+      // so a prerendered "/" would bypass server/middleware/locale-redirect.ts.
+      routes: ["/en"],
     },
   },
   i18n: {
@@ -29,12 +31,10 @@ export default defineNuxtConfig({
       { code: "en", language: "en-US", name: "English", file: "en.json" },
     ],
     langDir: "locales",
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "i18n_redirected",
-      redirectOn: "root",
-      fallbackLocale: "pt-BR",
-    },
+    // Detection is owned by server/middleware/locale-redirect.ts (bot-aware, first visit only, cookie-aware).
+    // i18n's own detection redirects bots and fights the middleware, so it stays off; the switcher must set
+    // the `i18n_redirected` cookie itself.
+    detectBrowserLanguage: false,
     vueI18n: "./i18n.config.ts",
   },
   app: {

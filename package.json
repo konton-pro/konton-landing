@@ -9,7 +9,8 @@
     "start": "node .output/server/index.mjs",
     "preview": "nuxt preview",
     "i18n:check": "node scripts/check-i18n-keys.mjs",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "node --test tests/"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^10.6.0",
