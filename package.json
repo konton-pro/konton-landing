@@ -8,9 +8,11 @@
     "build": "nuxt build",
     "start": "node .output/server/index.mjs",
     "preview": "nuxt preview",
+    "i18n:check": "node scripts/check-i18n-keys.mjs",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/i18n": "^10.6.0",
     "nuxt": "4.5.1",
     "vue": "^3.5.30"
   },

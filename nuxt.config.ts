@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
-  modules: ["@nuxtjs/seo"],
+  modules: ["@nuxtjs/seo", "@nuxtjs/i18n"],
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://konton.pro",
@@ -17,12 +17,28 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ["/"],
+      routes: ["/", "/en"],
     },
+  },
+  i18n: {
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://konton.pro",
+    defaultLocale: "pt-BR",
+    strategy: "prefix_except_default",
+    locales: [
+      { code: "pt-BR", language: "pt-BR", name: "Português", file: "pt-BR.json" },
+      { code: "en", language: "en-US", name: "English", file: "en.json" },
+    ],
+    langDir: "locales",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
+      fallbackLocale: "pt-BR",
+    },
+    vueI18n: "./i18n.config.ts",
   },
   app: {
     head: {
-      htmlAttrs: { lang: "pt-BR" },
       meta: [
         { name: "theme-color", content: "#171513" },
         { name: "color-scheme", content: "light" },

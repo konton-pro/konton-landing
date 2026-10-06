@@ -1,0 +1,122 @@
+{
+  "a11y": {
+    "home": "Konton PRO, início",
+    "backToTop": "Voltar ao início",
+    "mainNav": "Navegação principal",
+    "principles": "Princípios da Konton",
+    "explorationMark": "Dois caminhos se aproximando de um ponto de direção"
+  },
+  "nav": {
+    "about": "Sobre",
+    "method": "Como fazemos",
+    "products": "Produtos",
+    "events": "Eventos",
+    "cta": "Vamos conversar"
+  },
+  "hero": {
+    "eyebrow": "Software house independente",
+    "title": "Ideias que{br}{em}",
+    "titleEm": "ganham caminho.",
+    "lead": "A Konton cria produtos digitais que transformam problemas reais em experiências simples, seguras e úteis.",
+    "primaryCta": "Ver o que construímos",
+    "secondaryCta": "Conhecer nosso jeito",
+    "imageAlt": "Caminhos de tinta e conexões técnicas convergindo para um ponto de direção"
+  },
+  "about": {
+    "number": "01 {slash} intenção",
+    "kicker": "Tecnologia feita por gente, para gente.",
+    "title": "O digital fica melhor quando começa no {em}",
+    "titleEm": "humano.",
+    "text": "A gente observa o que está à nossa volta, encontra as fricções e constrói ferramentas que fazem sentido de verdade. Cada produto é uma oportunidade de simplificar uma rotina e abrir novas possibilidades.",
+    "principles": [
+      "Clareza antes da complexidade.",
+      "Segurança como ponto de partida.",
+      "Utilidade que se prova no cotidiano."
+    ]
+  },
+  "method": {
+    "number": "02 {slash} como fazemos",
+    "intro": "Do primeiro sinal à evolução contínua, combinamos curiosidade, engenharia e compromisso.",
+    "steps": {
+      "observe": {
+        "title": "Observar",
+        "text": "Escutamos pessoas e entendemos o contexto antes de assumir uma solução."
+      },
+      "build": {
+        "title": "Construir",
+        "text": "Transformamos intenção em software claro, seguro e pronto para o mundo real."
+      },
+      "evolve": {
+        "title": "Evoluir",
+        "text": "Medimos, aprendemos e cuidamos do que foi criado para continuar útil."
+      }
+    }
+  },
+  "products": {
+    "number": "03 {slash} produtos",
+    "caption": "Produtos em funcionamento são a forma mais honesta de mostrar como pensamos.",
+    "nave": {
+      "kicker": "Mobilidade",
+      "text": "Menos espera, mais previsibilidade. A maneira simples de encontrar linhas e planejar seu caminho.",
+      "link": "Visitar Nave",
+      "imageAlt": "Pessoa e veículo seguindo uma jornada clara até o destino"
+    },
+    "lockroom": {
+      "kicker": "Privacidade",
+      "text": "Um lugar seguro para suas credenciais. Privacidade de ponta a ponta, sem abrir mão da praticidade.",
+      "link": "Visitar Lock-Room",
+      "imageAlt": "Pessoa guardando uma informação pessoal em um espaço protegido"
+    }
+  },
+  "exploration": {
+    "number": "04 {slash} em exploração",
+    "caption": "Hipóteses que ainda estão procurando a melhor forma de ganhar o mundo.",
+    "kicker": "O que vem depois",
+    "title": "Ideias em teste, com os pés no {em}",
+    "titleEm": "cotidiano.",
+    "text": "Nem toda boa hipótese já é um produto. A Konton abre espaço para investigar problemas, conversar com pessoas e prototipar caminhos antes de fazer promessas.",
+    "label": "em movimento"
+  },
+  "events": {
+    "number": "05 {slash} encontros",
+    "caption": "Conversas para pensar o presente e desenhar melhores caminhos.",
+    "kicker": "Evento Nave",
+    "date": "{day} {month} {year}",
+    "time": "{time}h · online",
+    "discord": "Ver no Discord",
+    "items": {
+      "1547959674090029076": {
+        "title": "Embarque na Revolução",
+        "description": "O Projeto Nave não é apenas um aplicativo; é a modernização definitiva de um setor historicamente esquecido."
+      },
+      "1547959147125932202": {
+        "title": "A evolução no transporte digital",
+        "description": "O fim das longas esperas e o início da verdadeira eficiência."
+      }
+    }
+  },
+  "nextEvent": {
+    "number": "06 {slash} próximos encontros",
+    "kicker": "Em construção contínua",
+    "title": "O próximo encontro começa agora.",
+    "text": "A Konton está sempre elaborando novas conversas para aproximar pessoas, ideias e os desafios reais do nosso território.",
+    "mark": "pessoas{br}ideias{br}caminhos"
+  },
+  "contact": {
+    "number": "07 {slash} contato",
+    "title": "Tem uma ideia{br}para colocar {em}",
+    "titleEm": "no mundo?",
+    "cta": "Vamos conversar"
+  },
+  "footer": {
+    "tagline": "Feito com curiosidade e compromisso.",
+    "copyright": "© {year} Konton PRO"
+  },
+  "seo": {
+    "title": "Konton PRO — tecnologia que ganha caminho",
+    "description": "A Konton PRO transforma problemas reais em produtos digitais simples, seguros e úteis.",
+    "socialDescription": "Uma software house que observa, constrói e evolui produtos digitais com intenção.",
+    "ogTitle": "Ideias que ganham caminho.",
+    "ogAlt": "Konton PRO — Ideias que ganham caminho."
+  }
+}
