@@ -1,3 +1,5 @@
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || "https://konton.pro";
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: false },
@@ -5,11 +7,11 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/seo", "@nuxtjs/i18n"],
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://konton.pro",
+      siteUrl: siteUrl,
     },
   },
   site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || "https://konton.pro",
+    url: siteUrl,
     name: "Konton PRO",
     description: "A Konton PRO transforma problemas reais em produtos digitais simples, seguros e úteis.",
     defaultLocale: "pt-BR",
@@ -23,7 +25,7 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
-    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://konton.pro",
+    baseUrl: siteUrl,
     defaultLocale: "pt-BR",
     strategy: "prefix_except_default",
     locales: [

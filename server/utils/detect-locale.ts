@@ -1,4 +1,4 @@
-export const LOCALE_COOKIE = "i18n_redirected";
+import { LOCALE_COOKIE, LOCALE_COOKIE_MAX_AGE } from "../../shared/utils/locale-cookie.ts";
 
 const BOT_RE =
   /googlebot|bingbot|duckduckbot|yandex|baiduspider|facebookexternalhit|twitterbot|linkedinbot|slackbot|discordbot|whatsapp|telegrambot|applebot|bot|crawler|spider|preview/i;
@@ -41,8 +41,6 @@ export function shouldRedirectToEn({ method, path, cookie, userAgent, acceptLang
   if (isBot(userAgent)) return false;
   return resolveLocale(acceptLanguage) === "en";
 }
-
-export const LOCALE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 /** Set-Cookie value that records the visitor's locale choice for one year. */
 export function localeCookieHeader(locale: string) {
