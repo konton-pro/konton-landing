@@ -1,125 +1,125 @@
 {
   "a11y": {
-    "home": "Konton PRO, início",
-    "backToTop": "Voltar ao início",
-    "mainNav": "Navegação principal",
-    "principles": "Princípios da Konton",
-    "explorationMark": "Dois caminhos se aproximando de um ponto de direção",
+    "home": "Konton PRO, home",
+    "backToTop": "Back to top",
+    "mainNav": "Main navigation",
+    "principles": "Konton principles",
+    "explorationMark": "Two paths drawing closer to a point of direction",
     "language": "Language"
   },
   "nav": {
-    "about": "Sobre",
-    "method": "Como fazemos",
-    "products": "Produtos",
-    "events": "Eventos",
-    "cta": "Vamos conversar"
+    "about": "About",
+    "method": "How we work",
+    "products": "Products",
+    "events": "Events",
+    "cta": "Let's talk"
   },
   "hero": {
-    "eyebrow": "Software house independente",
-    "title": "Ideias que{br}{em}",
-    "titleEm": "ganham caminho.",
-    "lead": "A Konton cria produtos digitais que transformam problemas reais em experiências simples, seguras e úteis.",
-    "primaryCta": "Ver o que construímos",
-    "secondaryCta": "Conhecer nosso jeito",
-    "imageAlt": "Caminhos de tinta e conexões técnicas convergindo para um ponto de direção"
+    "eyebrow": "Independent software house",
+    "title": "Ideas that{br}{em}",
+    "titleEm": "find their way.",
+    "lead": "Konton builds digital products that turn real problems into simple, secure and useful experiences.",
+    "primaryCta": "See what we build",
+    "secondaryCta": "Meet our approach",
+    "imageAlt": "Ink paths and technical connections converging on a point of direction"
   },
   "about": {
-    "number": "01 {slash} intenção",
-    "kicker": "Tecnologia feita por gente, para gente.",
-    "title": "O digital fica melhor quando começa no {em}",
-    "titleEm": "humano.",
-    "text": "A gente observa o que está à nossa volta, encontra as fricções e constrói ferramentas que fazem sentido de verdade. Cada produto é uma oportunidade de simplificar uma rotina e abrir novas possibilidades.",
+    "number": "01 {slash} intent",
+    "kicker": "Technology made by people, for people.",
+    "title": "Digital gets better when it starts with the {em}",
+    "titleEm": "human.",
+    "text": "We look at what's around us, find the friction and build tools that truly make sense. Every product is a chance to simplify a routine and open up new possibilities.",
     "principles": [
-      "Clareza antes da complexidade.",
-      "Segurança como ponto de partida.",
-      "Utilidade que se prova no cotidiano."
+      "Clarity before complexity.",
+      "Security as a starting point.",
+      "Usefulness proven day to day."
     ]
   },
   "method": {
-    "number": "02 {slash} como fazemos",
-    "intro": "Do primeiro sinal à evolução contínua, combinamos curiosidade, engenharia e compromisso.",
+    "number": "02 {slash} how we work",
+    "intro": "From the first signal to continuous evolution, we combine curiosity, engineering and commitment.",
     "steps": {
       "observe": {
-        "title": "Observar",
-        "text": "Escutamos pessoas e entendemos o contexto antes de assumir uma solução."
+        "title": "Observe",
+        "text": "We listen to people and understand the context before assuming a solution."
       },
       "build": {
-        "title": "Construir",
-        "text": "Transformamos intenção em software claro, seguro e pronto para o mundo real."
+        "title": "Build",
+        "text": "We turn intent into clear, secure software that's ready for the real world."
       },
       "evolve": {
-        "title": "Evoluir",
-        "text": "Medimos, aprendemos e cuidamos do que foi criado para continuar útil."
+        "title": "Evolve",
+        "text": "We measure, learn and look after what we've made so it stays useful."
       }
     }
   },
   "products": {
-    "number": "03 {slash} produtos",
-    "caption": "Produtos em funcionamento são a forma mais honesta de mostrar como pensamos.",
+    "number": "03 {slash} products",
+    "caption": "Products in the wild are the most honest way to show how we think.",
     "nave": {
-      "kicker": "Mobilidade",
-      "text": "Menos espera, mais previsibilidade. A maneira simples de encontrar linhas e planejar seu caminho.",
-      "link": "Visitar Nave",
-      "imageAlt": "Pessoa e veículo seguindo uma jornada clara até o destino"
+      "kicker": "Mobility",
+      "text": "Less waiting, more predictability. The simple way to find routes and plan your journey.",
+      "link": "Visit Nave",
+      "imageAlt": "A person and a vehicle following a clear journey to their destination"
     },
     "lockroom": {
-      "kicker": "Privacidade",
-      "text": "Um lugar seguro para suas credenciais. Privacidade de ponta a ponta, sem abrir mão da praticidade.",
-      "link": "Visitar Lock-Room",
-      "imageAlt": "Pessoa guardando uma informação pessoal em um espaço protegido"
+      "kicker": "Privacy",
+      "text": "A safe place for your credentials. End-to-end privacy, without giving up convenience.",
+      "link": "Visit Lock-Room",
+      "imageAlt": "A person storing personal information in a protected space"
     }
   },
   "exploration": {
-    "number": "04 {slash} em exploração",
-    "caption": "Hipóteses que ainda estão procurando a melhor forma de ganhar o mundo.",
-    "kicker": "O que vem depois",
-    "title": "Ideias em teste, com os pés no {em}",
-    "titleEm": "cotidiano.",
-    "text": "Nem toda boa hipótese já é um produto. A Konton abre espaço para investigar problemas, conversar com pessoas e prototipar caminhos antes de fazer promessas.",
-    "label": "em movimento"
+    "number": "04 {slash} exploring",
+    "caption": "Hypotheses still searching for the best way into the world.",
+    "kicker": "What comes next",
+    "title": "Ideas under test, feet on the {em}",
+    "titleEm": "ground.",
+    "text": "Not every good hypothesis is a product yet. Konton makes room to investigate problems, talk to people and prototype paths before making promises.",
+    "label": "in motion"
   },
   "events": {
-    "number": "05 {slash} encontros",
-    "caption": "Conversas para pensar o presente e desenhar melhores caminhos.",
-    "kicker": "Evento Nave",
-    "date": "{day} {month} {year}",
-    "time": "{time}h · online",
-    "discord": "Ver no Discord",
+    "number": "05 {slash} gatherings",
+    "caption": "Conversations to understand the present and shape better paths.",
+    "kicker": "Nave event",
+    "date": "{month} {day}, {year}",
+    "time": "{time} · online",
+    "discord": "View on Discord",
     "items": {
       "1547959674090029076": {
-        "title": "Embarque na Revolução",
-        "description": "O Projeto Nave não é apenas um aplicativo; é a modernização definitiva de um setor historicamente esquecido."
+        "title": "Board the Revolution",
+        "description": "Project Nave is not just an app; it's the definitive modernisation of a sector long overlooked."
       },
       "1547959147125932202": {
-        "title": "A evolução no transporte digital",
-        "description": "O fim das longas esperas e o início da verdadeira eficiência."
+        "title": "The evolution of digital transport",
+        "description": "The end of long waits and the start of real efficiency."
       }
     }
   },
   "nextEvent": {
-    "number": "06 {slash} próximos encontros",
-    "kicker": "Em construção contínua",
-    "title": "O próximo encontro começa agora.",
-    "text": "A Konton está sempre elaborando novas conversas para aproximar pessoas, ideias e os desafios reais do nosso território.",
-    "mark": "pessoas{br}ideias{br}caminhos"
+    "number": "06 {slash} upcoming gatherings",
+    "kicker": "Always in progress",
+    "title": "The next gathering starts now.",
+    "text": "Konton is always shaping new conversations to bring people, ideas and the real challenges of our region closer together.",
+    "mark": "people{br}ideas{br}paths"
   },
   "contact": {
-    "number": "07 {slash} contato",
-    "title": "Tem uma ideia{br}para colocar {em}",
-    "titleEm": "no mundo?",
-    "cta": "Vamos conversar"
+    "number": "07 {slash} contact",
+    "title": "Got an idea{br}to put {em}",
+    "titleEm": "out there?",
+    "cta": "Let's talk"
   },
   "footer": {
-    "tagline": "Feito com curiosidade e compromisso.",
+    "tagline": "Made with curiosity and commitment.",
     "copyright": "© {year} Konton PRO"
   },
   "seo": {
-    "title": "Konton PRO — tecnologia que ganha caminho",
-    "description": "A Konton PRO transforma problemas reais em produtos digitais simples, seguros e úteis.",
-    "socialDescription": "Uma software house que observa, constrói e evolui produtos digitais com intenção.",
-    "ogTitle": "Ideias que ganham caminho.",
+    "title": "Konton PRO — technology that finds its way",
+    "description": "Konton PRO turns real problems into simple, secure and useful digital products.",
+    "socialDescription": "A software house that observes, builds and evolves digital products with intent.",
+    "ogTitle": "Ideas that find their way.",
+    "ogAlt": "Konton PRO — Ideas that find their way.",
     "ogEyebrow": "SOFTWARE HOUSE INDEPENDENTE",
-    "ogTagline": "TECNOLOGIA QUE GANHA CAMINHO",
-    "ogAlt": "Konton PRO — Ideias que ganham caminho."
+    "ogTagline": "TECNOLOGIA QUE GANHA CAMINHO"
   }
 }
