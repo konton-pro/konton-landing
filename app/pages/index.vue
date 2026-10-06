@@ -73,8 +73,9 @@
 </template>
 
 <script setup lang="ts">
-const { t, d, localeProperties } = useI18n();
+const { t, d, locale, locales, localeProperties } = useI18n();
 const localePath = useLocalePath();
+const switchLocalePath = useSwitchLocalePath();
 const { public: { siteUrl } } = useRuntimeConfig();
 
 const pad = (n: number) => String(n).padStart(2, "0");
@@ -88,7 +89,11 @@ const events = [
 const formatDate = (startsAt: string) => t("events.date", { day: d(startsAt, "eventDay"), month: d(startsAt, "eventMonth"), year: d(startsAt, "eventYear") });
 const formatTime = (startsAt: string) => t("events.time", { time: d(startsAt, "eventTime") });
 
+const toOgLocale = (language?: string) => (language ?? "pt-BR").replace("-", "_");
+
 if (import.meta.server) {
+  const alternates = locales.value.filter((l) => l.code !== locale.value);
+  const pageUrl = new URL(localePath("/"), siteUrl).href;
   const title = t("seo.title");
   const description = t("seo.description");
   const socialDescription = t("seo.socialDescription");
@@ -96,19 +101,23 @@ if (import.meta.server) {
   useSeoMeta({
     title,
     description,
-    robots: "index, follow",
     ogTitle: title,
     ogDescription: socialDescription,
     ogType: "website",
     ogSiteName: "Konton PRO",
-    ogLocale: (localeProperties.value.language ?? "pt-BR").replace("-", "_"),
+    ogLocale: toOgLocale(localeProperties.value.language),
+    ogLocaleAlternate: alternates.map((l) => toOgLocale(l.language)),
     twitterCard: "summary_large_image",
     twitterTitle: title,
     twitterDescription: socialDescription,
   });
 
   useHead({
-    link: [{ rel: "canonical", href: new URL(localePath("/"), siteUrl).href }],
+    link: [
+      { rel: "canonical", href: pageUrl },
+      ...locales.value.map((l) => ({ rel: "alternate", hreflang: l.language, href: new URL(switchLocalePath(l.code), siteUrl).href })),
+      { rel: "alternate", hreflang: "x-default", href: new URL("/", siteUrl).href },
+    ],
   });
 
   useSchemaOrg([
@@ -117,13 +126,23 @@ if (import.meta.server) {
       url: siteUrl,
       email: "hello@konton.pro",
       description,
+      inLanguage: localeProperties.value.language,
       logo: new URL("/logo-mark.svg", siteUrl).href,
+    }),
+    defineWebPage({
+      "@id": `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: title,
+      description,
+      inLanguage: localeProperties.value.language,
     }),
   ]);
 
   defineOgImage("Konton", {
     title: t("seo.ogTitle"),
     description: socialDescription,
+    eyebrow: t("seo.ogEyebrow"),
+    tagline: t("seo.ogTagline"),
   }, {
     width: 1200,
     height: 630,

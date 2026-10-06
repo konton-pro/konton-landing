@@ -2,9 +2,13 @@
 withDefaults(defineProps<{
   title?: string;
   description?: string;
+  eyebrow?: string;
+  tagline?: string;
 }>(), {
   title: "Ideias que ganham caminho.",
   description: "Uma software house que observa, constrói e evolui produtos digitais com intenção.",
+  eyebrow: "SOFTWARE HOUSE INDEPENDENTE",
+  tagline: "TECNOLOGIA QUE GANHA CAMINHO",
 });
 </script>
 
@@ -19,13 +23,13 @@ withDefaults(defineProps<{
         <span>konton<span class="dot">.</span><small>pro</small></span>
       </div>
 
-      <p class="eyebrow">SOFTWARE HOUSE INDEPENDENTE</p>
+      <p class="eyebrow">{{ eyebrow }}</p>
       <h1 class="title">{{ title }}</h1>
       <p class="description">{{ description }}</p>
     </div>
 
     <div class="footer">
-      <span>TECNOLOGIA QUE GANHA CAMINHO</span>
+      <span>{{ tagline }}</span>
       <span class="marker" />
       <span>KONTON.PRO</span>
     </div>
