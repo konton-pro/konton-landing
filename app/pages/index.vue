@@ -3,6 +3,7 @@
     <header class="site-header container">
       <a class="wordmark" href="#top" :aria-label="t('a11y.home')"><img src="/logo-mark.svg" alt="" aria-hidden="true" /><span>konton<span class="wordmark-dot">.</span><small>pro</small></span></a>
       <nav class="main-nav" :aria-label="t('a11y.mainNav')"><a href="#sobre">{{ t("nav.about") }}</a><a href="#metodo">{{ t("nav.method") }}</a><a href="#produtos">{{ t("nav.products") }}</a><a href="#eventos">{{ t("nav.events") }}</a></nav>
+      <LanguageSwitcher />
       <a class="header-cta" href="#contato">{{ t("nav.cta") }} <span aria-hidden="true">↗</span></a>
     </header>
 
@@ -67,7 +68,7 @@
       <section id="contato" class="contact-section container"><div class="contact-mark" aria-hidden="true"><img src="/logo-mark.svg" alt="" /></div><div><i18n-t keypath="contact.number" tag="p" class="section-number"><template #slash><span>/</span></template></i18n-t><i18n-t keypath="contact.title" tag="h2"><template #br><br /></template><template #em><em>{{ t("contact.titleEm") }}</em></template></i18n-t></div><a class="button button-dark" href="mailto:hello@konton.pro">{{ t("contact.cta") }} <span aria-hidden="true">↗</span></a></section>
     </main>
 
-    <footer class="site-footer container"><a class="wordmark" href="#top" :aria-label="t('a11y.backToTop')"><img src="/logo-mark.svg" alt="" aria-hidden="true" /><span>konton<span class="wordmark-dot">.</span><small>pro</small></span></a><p>{{ t("footer.tagline") }}</p><p>{{ t("footer.copyright", { year: new Date().getFullYear() }) }}</p></footer>
+    <footer class="site-footer container"><a class="wordmark" href="#top" :aria-label="t('a11y.backToTop')"><img src="/logo-mark.svg" alt="" aria-hidden="true" /><span>konton<span class="wordmark-dot">.</span><small>pro</small></span></a><p>{{ t("footer.tagline") }}</p><LanguageSwitcher /><p>{{ t("footer.copyright", { year: new Date().getFullYear() }) }}</p></footer>
   </div>
 </template>
 
