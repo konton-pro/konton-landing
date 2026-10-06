@@ -4,7 +4,7 @@
     "backToTop": "Back to top",
     "mainNav": "Main navigation",
     "principles": "Konton principles",
-    "explorationMark": "Two paths drawing closer to a point of direction",
+    "explorationMark": "Two paths converging on a guiding point",
     "language": "Language"
   },
   "nav": {
@@ -21,7 +21,7 @@
     "lead": "Konton builds digital products that turn real problems into simple, secure and useful experiences.",
     "primaryCta": "See what we build",
     "secondaryCta": "Meet our approach",
-    "imageAlt": "Ink paths and technical connections converging on a point of direction"
+    "imageAlt": "Ink strokes and technical connections converging on a guiding point"
   },
   "about": {
     "number": "01 {slash} intent",
@@ -58,7 +58,7 @@
     "caption": "Products in the wild are the most honest way to show how we think.",
     "nave": {
       "kicker": "Mobility",
-      "text": "Less waiting, more predictability. The simple way to find routes and plan your journey.",
+      "text": "Less waiting, more predictability. The simple way to find your line and plan your journey.",
       "link": "Visit Nave",
       "imageAlt": "A person and a vehicle following a clear journey to their destination"
     },
@@ -71,10 +71,10 @@
   },
   "exploration": {
     "number": "04 {slash} exploring",
-    "caption": "Hypotheses still searching for the best way into the world.",
+    "caption": "Hypotheses still finding their best way out into the world.",
     "kicker": "What comes next",
-    "title": "Ideas under test, feet on the {em}",
-    "titleEm": "ground.",
+    "title": "Ideas being tested, grounded in the {em}",
+    "titleEm": "everyday.",
     "text": "Not every good hypothesis is a product yet. Konton makes room to investigate problems, talk to people and prototype paths before making promises.",
     "label": "in motion"
   },
@@ -83,12 +83,12 @@
     "caption": "Conversations to understand the present and shape better paths.",
     "kicker": "Nave event",
     "date": "{month} {day}, {year}",
-    "time": "{time} · online",
+    "time": "{time} BRT · online",
     "discord": "View on Discord",
     "items": {
       "1547959674090029076": {
-        "title": "Board the Revolution",
-        "description": "Project Nave is not just an app; it's the definitive modernisation of a sector long overlooked."
+        "title": "All aboard the revolution",
+        "description": "Project Nave isn't just an app — it's the long-overdue modernisation of a sector history forgot."
       },
       "1547959147125932202": {
         "title": "The evolution of digital transport",
