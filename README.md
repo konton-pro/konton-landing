@@ -20,14 +20,34 @@ pnpm dev       # inicia o servidor de desenvolvimento
 pnpm build     # gera a aplicação para produção
 pnpm preview   # visualiza o build localmente
 pnpm start     # inicia o servidor gerado
+pnpm test       # roda os testes da detecção de idioma
+pnpm i18n:check # confere se todos os idiomas têm as mesmas chaves
 ```
 
 ## Estrutura
 
-- `app/pages/index.vue`: página principal e conteúdo institucional.
+- `app/pages/index.vue`: página principal; os textos vêm de `i18n/locales/`.
+- `i18n/`: traduções (`locales/*.json`), formatos de data (`i18n.config.ts`) e glossário.
 - `app/assets/css/main.css`: estilos globais do site.
 - `public/`: arquivos públicos, como o favicon.
 - `nuxt.config.ts`: configuração do Nuxt, metadados e recursos globais.
+
+## Idiomas
+
+O site usa [`@nuxtjs/i18n`](https://i18n.nuxtjs.org). O português do Brasil (`pt-BR`) é o idioma padrão e fica em `/`; o inglês (`en`) fica em `/en`.
+
+- As mensagens ficam em `i18n/locales/<codigo>.json`, agrupadas por seção (`nav`, `hero`, `about`…). O `pt-BR.json` é a referência.
+- Textos com destaque (`<em>`, `<br>`) usam placeholders como `{em}` e `{br}`, preenchidos com `<i18n-t>` na página.
+- Os eventos ficam em `app/pages/index.vue` (id, data ISO e link); título e descrição ficam em `events.items.<id>` nas mensagens.
+- `pnpm i18n:check` falha se algum idioma tiver chaves a mais ou a menos que o `pt-BR.json`.
+
+Para adicionar um idioma:
+
+1. Crie `i18n/locales/<codigo>.json` com as mesmas chaves do `pt-BR.json`.
+2. Registre-o em `i18n.locales` no `nuxt.config.ts` (`code`, `language`, `name`, `file`).
+3. Adicione os formatos de data em `i18n/i18n.config.ts` (`datetimeFormats`) e inclua a rota `/<codigo>` em `nitro.prerender.routes`.
+4. Atualize `resolveLocale` em `server/utils/detect-locale.ts` e o redirect em `server/middleware/locale-redirect.ts`, que hoje só conhecem `pt-BR` e `en`; sem isso o novo idioma não é detectado nem redirecionado.
+5. Rode `pnpm test`, `pnpm i18n:check` e `pnpm build`.
 
 ## Produção
 

@@ -1,0 +1,125 @@
+{
+  "a11y": {
+    "home": "Konton PRO, home",
+    "backToTop": "Back to top",
+    "mainNav": "Main navigation",
+    "principles": "Konton principles",
+    "explorationMark": "Two paths converging on a guiding point",
+    "language": "Language"
+  },
+  "nav": {
+    "about": "About",
+    "method": "How we work",
+    "products": "Products",
+    "events": "Events",
+    "cta": "Let's talk"
+  },
+  "hero": {
+    "eyebrow": "Independent software house",
+    "title": "Ideas that{br}{em}",
+    "titleEm": "find their way.",
+    "lead": "Konton builds digital products that turn real problems into simple, secure and useful experiences.",
+    "primaryCta": "See what we build",
+    "secondaryCta": "Meet our approach",
+    "imageAlt": "Ink strokes and technical connections converging on a guiding point"
+  },
+  "about": {
+    "number": "01 {slash} intent",
+    "kicker": "Technology made by people, for people.",
+    "title": "Digital gets better when it starts with the {em}",
+    "titleEm": "human.",
+    "text": "We look at what's around us, find the friction and build tools that truly make sense. Every product is a chance to simplify a routine and open up new possibilities.",
+    "principles": [
+      "Clarity before complexity.",
+      "Security as a starting point.",
+      "Usefulness proven day to day."
+    ]
+  },
+  "method": {
+    "number": "02 {slash} how we work",
+    "intro": "From the first signal to continuous evolution, we combine curiosity, engineering and commitment.",
+    "steps": {
+      "observe": {
+        "title": "Observe",
+        "text": "We listen to people and understand the context before assuming a solution."
+      },
+      "build": {
+        "title": "Build",
+        "text": "We turn intent into clear, secure software that's ready for the real world."
+      },
+      "evolve": {
+        "title": "Evolve",
+        "text": "We measure, learn and look after what we've made so it stays useful."
+      }
+    }
+  },
+  "products": {
+    "number": "03 {slash} products",
+    "caption": "Products in the wild are the most honest way to show how we think.",
+    "nave": {
+      "kicker": "Mobility",
+      "text": "Less waiting, more predictability. The simple way to find your line and plan your journey.",
+      "link": "Visit Nave",
+      "imageAlt": "A person and a vehicle following a clear journey to their destination"
+    },
+    "lockroom": {
+      "kicker": "Privacy",
+      "text": "A safe place for your credentials. End-to-end privacy, without giving up convenience.",
+      "link": "Visit Lock-Room",
+      "imageAlt": "A person storing personal information in a protected space"
+    }
+  },
+  "exploration": {
+    "number": "04 {slash} exploring",
+    "caption": "Hypotheses still finding their best way out into the world.",
+    "kicker": "What comes next",
+    "title": "Ideas being tested, grounded in the {em}",
+    "titleEm": "everyday.",
+    "text": "Not every good hypothesis is a product yet. Konton makes room to investigate problems, talk to people and prototype paths before making promises.",
+    "label": "in motion"
+  },
+  "events": {
+    "number": "05 {slash} gatherings",
+    "caption": "Conversations to understand the present and shape better paths.",
+    "kicker": "Nave event",
+    "date": "{month} {day}, {year}",
+    "time": "{time} BRT · online",
+    "discord": "View on Discord",
+    "items": {
+      "1547959674090029076": {
+        "title": "All aboard the revolution",
+        "description": "Project Nave isn't just an app — it's the long-overdue modernisation of a sector history forgot."
+      },
+      "1547959147125932202": {
+        "title": "The evolution of digital transport",
+        "description": "The end of long waits and the start of real efficiency."
+      }
+    }
+  },
+  "nextEvent": {
+    "number": "06 {slash} upcoming gatherings",
+    "kicker": "Always in progress",
+    "title": "The next gathering starts now.",
+    "text": "Konton is always shaping new conversations to bring people, ideas and the real challenges of our region closer together.",
+    "mark": "people{br}ideas{br}paths"
+  },
+  "contact": {
+    "number": "07 {slash} contact",
+    "title": "Got an idea{br}to put {em}",
+    "titleEm": "out there?",
+    "cta": "Let's talk"
+  },
+  "footer": {
+    "tagline": "Made with curiosity and commitment.",
+    "copyright": "© {year} Konton PRO"
+  },
+  "seo": {
+    "title": "Konton PRO — technology that finds its way",
+    "description": "Konton PRO turns real problems into simple, secure and useful digital products.",
+    "socialDescription": "A software house that observes, builds and evolves digital products with intent.",
+    "ogTitle": "Ideas that find their way.",
+    "ogAlt": "Konton PRO — Ideas that find their way.",
+    "ogEyebrow": "INDEPENDENT SOFTWARE HOUSE",
+    "ogTagline": "TECHNOLOGY THAT FINDS ITS WAY"
+  }
+}

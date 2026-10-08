@@ -1,1 +1,3 @@
 @import "../../../assets/css/main.css";
+.lang-switch { display:inline-flex; align-items:center; gap:7px; color:var(--muted); font:500 .7rem "DM Mono",monospace; letter-spacing:.04em; }.lang-switch a { padding:4px 1px; border-bottom:1px solid transparent; transition:color .2s ease,border-color .2s ease; }.lang-switch a:hover { color:var(--red); }.lang-switch a.is-active { color:var(--ink); border-bottom-color:var(--red); }.lang-switch-sep { opacity:.5; }.site-header .lang-switch { margin-right:22px; }
+@media (max-width:720px) { .site-header .lang-switch { margin-left:auto; margin-right:14px; }.site-header .header-cta { margin-left:0; } }
